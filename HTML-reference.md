@@ -10,7 +10,7 @@ For example, there are 2 HTML elements in the following HTML document:
 
 ```html
 <ul id="foo">
-    <li class="bar" id="someid">one</li>
+  <li class="bar" id="someid">one</li>
 </ul>
 ```
 
@@ -20,8 +20,8 @@ Here is another HTML document with an element with two children
 
 ```html
 <ul>
-    <li>one</li>
-    <li>two</li>
+  <li>one</li>
+  <li>two</li>
 </ul>
 ```
 
@@ -30,7 +30,7 @@ An element can have 0 or more attributes, 0 or more children and always has a si
 All HTML elements are written the same way:
 
 1. You always start an element with <tagname …>
-    - where … denotes the attributes of the element. 
+   - where … denotes the attributes of the element.
 2. Then come the children
 3. The you need to close the element with </tagname>
 
@@ -40,7 +40,7 @@ The following HTML document has an error. Can you find it?
 
 ```html
 <div>
-<div> hello
+  <div>hello</div>
 </div>
 ```
 
@@ -76,6 +76,7 @@ The li tag is for list elements. The parent of an li element should be a ul or o
 The ul tag is for numbered lists. The children of a ol element should be li elements
 
 ## select
+
 The select tag is for drop down selection. It renders option elements.
 
 ## option
@@ -95,12 +96,13 @@ The div tag is generic and is used in many situations.
 The span tag is also used for text. However, it doesn't create a new line. It is only useful when combined with css or event handlers (covered in later chapters)
 
 ## p vs div
+
 Any time you can use a `p`, you could also have used the more generic `div` tag. ~Usually, it doesn't really matter which one you choose.~ IT MATTERS!
 
 ### Here are the advantages to using a p tag
 
 It makes your page easier to analyze by screen readers and therefore more accessible to the blind.
-`p` tags increase code readability and maintainability. 
+`p` tags increase code readability and maintainability.
 
 ## a
 
@@ -119,7 +121,10 @@ Its descendants cannot be a clickable element (eg: `<button><a href="/foobar"/><
 The `img` requires an `alt` attribute. It is the title/label of the image. This attribute is used when the image is missing, by screen readers (accessibility) and is just plain good practice.
 
 ```html
-<img src="https://example.com/images/thailand-sunset.png" alt="Sunset on the beach in Thailand" />
+<img
+  src="https://example.com/images/thailand-sunset.png"
+  alt="Sunset on the beach in Thailand"
+/>
 ```
 
 ## `form`
@@ -130,7 +135,7 @@ The `img` requires an `alt` attribute. It is the title/label of the image. This 
 
 `input` tags are usually (but not necessarily) found inside a form element. They always have a type attribute that dictates their purpose, how they are displayed and how users interact with them.
 
-For example, 
+For example,
 
 - `type="text"` is for text boxes where users can enter information (eg their username)
 - `type="password"` is for text boxes where users can enter their password (which is hidden when they type)
@@ -139,7 +144,7 @@ For example,
 
 Pressing enter in an input element submits the form. This is very convenient. Also, forms can be autofilled by your browser, but orphaned input tags can't. Form tags provide an easy way to send information to a server. We will cover this topic in a later chapter.
 
-## `table` 
+## `table`
 
 `table` tags are (surprisingly) for tables. They contain rows of data. Each row contains cells.
 
